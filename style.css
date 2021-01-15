@@ -1,0 +1,60 @@
+body{
+    background-color: #312c51;  /*color fondo*/
+}
+
+
+.nav-boton{
+    padding: 20px;
+    background-color: #554e83;
+    margin: 10px;
+}
+.nav-boton:hover{
+    background-color: rgb(155, 58, 28);
+}
+
+
+.BotonOp{                                    /*  'nav' = botones */
+    background-color: rgb(243, 80, 31);         
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 5px;
+    cursor:pointer;
+    border-radius:4px;
+}
+.BotonOp:hover{
+    background-color: rgb(89, 253, 157);
+    color: rgb(13, 12, 14);
+}
+.BotonOp:active{
+    background-color:rgb(45, 192, 255);
+    color:cornsilk;
+}
+
+
+.nav-porcentaje{
+    padding: 20px;
+    background-color: #554e83;
+    margin: 10px;
+}
+.nav-porcentaje:hover{
+    background-color: rgb(155, 58, 28);
+}
+
+
+#FormIngreso{
+    background-color: #4a84aa;
+    padding:6% 4%;
+}
+
+@media(max-width: 850px){
+    .nav-porcentaje{
+        display:flex;
+        flex-direction: column;  
+        margin: 5px; 
+    }
+    .BotonOp{
+        display:flex;
+        flex-direction: column;
+        margin: 10px 5px;
+    }
+}
