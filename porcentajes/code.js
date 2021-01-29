@@ -25,8 +25,6 @@ function masporcentaje()
         resultado = (numero * porcentaje) / 100;
         total = numero + resultado;
         alert("La suma del "+porcentaje+"% a "+numero+" es: "+total);
-    } else {
-        alert("Sin operaciones.");
     }
 }
 function descuento()
@@ -57,8 +55,6 @@ function descuento()
 
         alert(numero+" con un descuento del "+descuento+"%, es: "+total)
 
-    } else {
-        alert("Ningun descuento realizado");
     }
 }
 function diferencia()

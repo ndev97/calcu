@@ -41,9 +41,17 @@ body{
 }
 
 
-#FormIngreso{
+.Texto{
     background-color: #4a84aa;
-    padding:6% 4%;
+    padding: 40px 40px;
+    margin: 10px;
+    color: rgb(235, 225, 225);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.FormIngreso{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 @media(max-width: 850px){

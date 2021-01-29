@@ -11,7 +11,7 @@ function sumas()
     if(respuesta){
         while(respuesta){
             acumuladorSuma++;
-            var numero = prompt("Ingrese un numero a sumar");
+            var numero = prompt("Ingrese solo el primer numero a sumar");
             numero = parseFloat(numero);
             while(isNaN(numero)){
                 numero = prompt("Ingrese un numero valido");
@@ -27,9 +27,6 @@ function sumas()
             resultadoPromedio = totalSuma / acumuladorSuma;
             alert("El promedio de "+totalSuma+" entre "+acumuladorSuma+" es: "+resultadoPromedio);
         }
-
-    } else{
-        alert("Ninguna suma realizada");
     }
 }
 function restas()
@@ -41,7 +38,7 @@ function restas()
     respuesta = confirm("Desea realizar restas?");
 
     if(respuesta){
-        var numero = prompt("Ingrese un numero a restar");
+        var numero = prompt("Ingrese solo el numero a restar");
         numero = parseFloat(numero);
         while(isNaN(numero)){
             numero = promp("Ingrese un numero valido");
@@ -78,7 +75,7 @@ function multip()
     
     respuesta = confirm("Desea realizar multiplicaciones?");
     if(respuesta){
-        var numero = prompt("Ingrese numero a multiplicar");
+        var numero = prompt("Ingrese solo un numero a multiplicar");
         numero = parseFloat(numero);
         while(isNaN(numero)){
             numero = prompt("Ingrese un numero valido");
@@ -107,7 +104,6 @@ function multip()
             respuesta = confirm("Desea seguir ingresando numeros?");
         }
         alert("La multiplicación es: "+totalMult);
-
     }
 }
 function division()
@@ -133,9 +129,13 @@ function division()
             divisor = parseFloat(divisor);
         }
 
+
         resultado = numero / divisor;
+
+        if(resultado == "Infinity"){
+            alert("Syntax error: el resultado no puede ser ")
+        }
+
         alert (numero+" dividido "+divisor+" es: "+resultado);
-    } else {
-        alert("No se realizaron fracciones")
     }
 }
