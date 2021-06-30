@@ -8,11 +8,12 @@ function masporcentaje()
 
     respuesta = confirm("Desea sumar un porcentaje?");
     if(respuesta){
-        numero = prompt("Ingrese un numero");
+        numero = prompt("Ingrese el número inicial");
         numero = parseFloat(numero);
         while(isNaN(numero)){
             numero = prompt("Ingrese un numero valido");
             numero = parseFloat(numero);
+            
         }
 
         porcentaje = prompt("Ingrese el porcentaje a sumar");
@@ -36,7 +37,7 @@ function descuento()
 
     respuesta = confirm("Desea realizar un descuento?");
     if(respuesta){
-        numero = prompt("Ingrese el numero");
+        numero = prompt("Ingrese el numero inicial");
         numero = parseFloat(numero);
         while(isNaN(numero)){
             numero = prompt("Ingrese un numero valido");
@@ -93,7 +94,7 @@ function soloporcentaje()
 
     respuesta = confirm("Desea averiguar el porcentaje de un número?");
     if(respuesta){
-        numero = prompt("Ingrese el numero");
+        numero = prompt("Ingrese el numero inicial");
         numero = parseFloat(numero);
         while(isNaN(numero)){
             numero = prompt("Ingrese un numero valido");
